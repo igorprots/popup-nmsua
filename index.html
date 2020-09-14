@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="holder">
+        <a href="#" id="test">Contact</a>
+    </div>
+
+    <div id="contactform">
+        <form id="contact-form" class="contact-form" action="#" method="post">
+            <h1>Popup Form</h1>
+            <ul>
+                <li class="comment">
+                    <!--Tip: textarea breaks if tags are not in the same line or broken up somehow -->
+                    <textarea class="text-comment" rows="2" id="text" spellcheck="false" placeholder="Say something." min-length="2" max-length="500" required></textarea>
+                    <label for="message">Message</label>
+                    <span class="notification"></span>
+                    <span class="required"><strong><small><em> (required)</em></small></strong></span>
+                    <span class="char-counter"></span>
+                </li>
+                <li class="name">
+                    <input type="text" class="input-name" name="name" placeholder="ie. Joe McDoodle" spellcheck="false" min-length="2" max-length="40" required />
+                    <label for="name">Name</label>
+                    <span class="notification"></span>
+                    <span class="required"><strong><small><em> (required)</em></small></strong></span>
+                    <span class="char-counter"></span>
+                </li>
+                <li class="email">
+                    <input type="email" class="input-email" name="email" placeholder="ie. my@email.com" spellcheck="false" min-length="2" max-length="30" required />
+                    <label for="email">Email</label>
+                    <span class="notification"></span>
+                    <span class="required"><strong><small><em> (required)</em></small></strong></span>
+                    <span class="char-counter"></span>
+                </li>
+            </ul>
+            <!-- Submit -->
+            <div class="form-btn">
+                <input id="input-submit" class="input-submit" type="submit" value="Submit" id="submit" />
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
